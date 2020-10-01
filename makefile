@@ -1,5 +1,5 @@
 .POSIX:
-.PHONY: all euler clean
+.PHONY: all clean
 CC= gcc
 OBJECTS= main.o euler.o
 LDLIBS= -lm

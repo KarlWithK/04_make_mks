@@ -33,4 +33,3 @@ int sum_square_difference(int limit) {
   }
   return result;
 }
-

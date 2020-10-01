@@ -1,4 +1,5 @@
 .POSIX:
+.PHONY: all euler clean
 CC= gcc
 OBJECTS= main.o euler.o
 LDLIBS= -lm

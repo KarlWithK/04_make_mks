@@ -1,11 +1,8 @@
 .POSIX:
-.PHONY: all clean
+.PHONY: run clean
 CC= gcc
 OBJECTS= main.o euler.o
 LDLIBS= -lm
-
-run: euler 
-	./euler
 
 euler: $(OBJECTS)
 	$(CC) -o euler $(OBJECTS) $(LDLIBS)
@@ -15,6 +12,9 @@ main.o: main.c euler.h
 
 euler.o: euler.c euler.h
 	$(CC) -c euler.c
+
+run: euler 
+	./euler
 
 clean:
 	rm *.o
